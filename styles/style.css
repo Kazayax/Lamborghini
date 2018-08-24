@@ -1,0 +1,171 @@
+body {
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans serif;
+
+}
+
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1; /* précise l'empilement de l'élément de la page */
+}
+
+header img{
+	width: 150px;
+	position: absolute; /* détermine la façon dont est positionné l'élément */
+	top: 10%; /* top, right; bottom; left determinent l'emplacement final */
+	left: 15%;
+}
+
+header nav ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center; /* aligne le texte horizontalement */
+	padding: 50px 30px;
+	align-items: center; /* aligne le texte verticalement */
+}
+
+header nav li:hover{ /* action qd on passe la souris sur un élément */
+	color: gold;
+	transition: 0.3s;
+}
+
+header nav li{
+	color: #000000;
+	transition: 0.3s;
+	margin: 0 20px;
+	font-family: 'Montserrat', sans serif;
+
+}
+
+
+.firstDiv {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/lambo-model-1.jpg"); /* mettre l'image en fond */
+	background-repeat: no-repeat; /* ne pas répéter l'image plusieurs fois sur l'écran */
+	background-size: cover; /* l'image couvre tous l'écran */
+	background-position: center center; /* centrer l'image sur l'axe x et y */
+	position: relative;
+}
+
+.firstDiv h1 {
+	font-family: 'Montserrat', sans serif;
+	font-size: 60px;
+	font-weight: bold;
+	color: #000;
+	width: 30%;
+	text-align: right;
+	position: absolute;
+    bottom: 80px;
+    right: 80px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.5px; /* mettre une bordure au texte */
+	-webkit-text-stroke-color: #3CBBE3; /* la colorer */
+
+}
+
+.fleche{
+	position: absolute;
+	bottom: 80px;
+	right: 50%;
+    transform: translateX(50%); /* centrer l'élément sur la page */
+
+}
+
+.trait {
+	width: 60px;
+	height: 3px;
+	background-color: gold;
+	display: inline-block;
+	margin: -7px;
+}
+
+.trait:first-child{
+	transform: rotate(33deg);
+}
+
+.trait:last-child{
+	transform: rotate(-33deg);
+}
+
+.slider {
+	width: 100%;
+	padding: 50px 15px;
+	background-color: grey;
+}
+
+
+.slider img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.slider p{
+	padding: 10px 0;
+	font-weight: 400;
+}
+
+
+.slide{
+	margin: 0 15px; 
+}
+
+.slide .infos{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.slide span{
+	font-size: 10px;
+}
+
+.slide .infos .date{
+	font-weight: bold;
+}
+
+
+.slide .article{
+	color: red;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.slide h3{
+	width: 90%;
+	font-weight: bold;
+}
+
+/* class spécifique à slick (site de slider) */
+
+.slick-arrow {
+	display: none!important; /* "!important" (ne pas trop utiliser!!) sert à faire passer la 
+	propriété avant toutes les autres */
+}
+
+.slick-slide{
+	height: auto;
+}
+
+/* class spécifique à slick (site de slider) */
+
+
+.spider img{
+	width: 50%;
+	display: flex;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.flecheG{
+	margin-left: 400px;
+	display: flex;
+	align-items: center;
+}
+
+.spider .arrow{
+	width: 50px;
+}
