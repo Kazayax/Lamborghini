@@ -4,6 +4,11 @@ body {
 
 }
 
+a{
+	text-decoration: none;
+	color: inherit; 
+}
+
 header {
 	position: absolute;
 	top: 0;
@@ -12,7 +17,13 @@ header {
 	z-index: 1; /* précise l'empilement de l'élément de la page */
 }
 
-header img{
+header .burger{
+	width: 30px;
+	margin: 34px 0 0 14px;
+	display: none;
+}
+
+header .logo {
 	width: 150px;
 	position: absolute; /* détermine la façon dont est positionné l'élément */
 	top: 10%; /* top, right; bottom; left determinent l'emplacement final */
@@ -57,10 +68,9 @@ header nav li{
 	font-size: 60px;
 	font-weight: bold;
 	color: #000;
-	width: 30%;
 	text-align: right;
 	position: absolute;
-    bottom: 180px;
+    bottom: 88px;
     right: 80px;
     text-transform: uppercase;
     -webkit-text-stroke: 0.5px; /* mettre une bordure au texte */
@@ -156,10 +166,11 @@ header nav li{
 	padding: 50px;
 	position: relative;
 	display: flex;
+    align-items: center;
+
 }
 
 .spider .txtSpider{
-    width: 30%;
     padding-right: 50px;
 }
 
@@ -182,13 +193,12 @@ header nav li{
 	line-height: 2.5;
 	display: flex;
     justify-content: center;
-
+    color: black;
 }
 
 .spider .arrow{
 	position: absolute;
     z-index: 1;
-    top: 45%;
     transform: translateY(50%);
 }
 
@@ -252,7 +262,7 @@ input, textarea {
 	font: 1em Montserrat;
 
 	/* Pour que tous les champs texte aient la même dimension */
-	width: 300px;
+	width: 70%;
 	box-sizing: border-box;
 
 	/* Pour harmoniser le look & feel des bordures des champs texte */
@@ -285,3 +295,150 @@ button {
 	font-size: 1em;
 
 }
+
+
+				/* RESPONSIVE */
+
+@media screen and (max-width: 1100px) {
+	
+	header .logo{
+		left: 0;
+	}
+
+	.spider{
+		padding: 0 30px;
+		flex-direction: column;
+	}
+
+	.spider .txtSpider{
+		padding-right: 0;
+	}
+
+	.spider .arrow{
+		display: none!important;
+	}
+
+	.spider .slider2 {
+    width: 100%;
+    margin: 0 auto;
+	}
+
+	.spider .arrow img {
+    width: 30px;
+	}
+
+	.spider .arrow{
+	bottom: 58px;
+	}
+
+	.spider .arrowLeft {
+    left: 49px;
+	}
+
+	.spider .arrowRight{
+		right: 49px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	
+	header nav{
+		display: none;
+		background: beige;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	}
+
+	header nav.active{
+		display: inline-block;
+	}
+
+	header nav ul{
+		flex-direction: column;
+	}
+
+	header nav ul li {
+		margin: 10px auto;
+	}
+
+	header .burger{
+		display: inline-block;
+	}
+
+	header .logo{
+		width: 115px;
+		top: 25px;
+		left: 115px;
+		transform: translateX(-50%);
+    	left: 50%;
+	}
+
+	.firstDiv h1{
+		font-size: 30px;
+		bottom: auto;
+   		top: 110px;
+    	text-align: center;
+    	transform: translateX(50%);
+    	right: 50%
+	}
+
+	.firstDiv .fleche{
+		bottom: 70px;
+	}
+
+	.firstDiv .trait{
+		width: 40px;
+		height: 2px;
+		margin: -6px;
+	}
+
+	.slider .slide h3{
+		font-size: 10px;
+	}
+
+	.spider .txtSpider h2,
+	.spider .txtSpider p {
+		font-size: 12px;
+	}
+
+	.spider .txtSpider a {
+		font-size: 13px;
+		padding-bottom: 15px;
+	}
+	
+		.contact h2{
+		font-size: 27px;
+	}
+
+	form{
+		width: 222px;
+	}
+
+	form label{
+		display: block;
+		text-align: left;
+		font-size: 12px;
+	}
+
+	form .txtInfos label{
+		font-size: 12px;
+	}
+
+	input, textarea{
+		font-size: 12px;
+		width: 100%;
+	}
+
+	.button{
+		padding-left: 0;
+
+	}
+
+	.button button{
+		font-size: 12px;
+		margin: 0 auto;
+    	display: block;
+	}

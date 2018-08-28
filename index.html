@@ -2,32 +2,38 @@
 <html lang="fr">
 	<head>
 		<title> Lamborghini & co </title>
-		<meta charset="utf-8">			<link rel="stylesheet" type="text/css" href="styles/reset.css">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/reset.css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600,700" rel="stylesheet">
 		<link rel="icon" href="images/favicon_.ico" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
 		<header>
-			<img src="images/lambo-logo.png"/>
-			<nav>	
+			<img class="burger" src="images/burger-menu.png">
+			<img class="logo" src="images/lambo-logo.png"/>
+			<nav id="navigation">
+				<!-- <img class="cross" src="images/cross.png"> -->
 				<ul>
-					<li></li>
-					<li>actualités</li>
-					<li>vidéos</li>
-					<li>essais</li>
-					<li>boutique</li>
-					<li>contact</li>
+				<li><a href="https://www.lamborghini.com/fr-en/exp%C3%A9rience/%C3%A9v%C3%A9nements" target="_blank">actualités</a></li> 
+					
+					<li><a href="https://www.youtube.com/watch?time_continue=1&v=8_A7gBBt8-A" target="_blank">vidéos</a></li>
+					
+					<li><a href="https://www.largus.fr/actualite-automobile/essai-lamborghini-aventador-s-la-performance-sublimee-8346396.html" target="_blank">essais</a></li>
+					
+					<li><a href="https://www.lamborghini.com/fr-en/store" target="_blank">boutique</a></li>
+
+					<li><a href="https://www.lamborghini.com/fr-en/service-au-client" target="_blank">contact</a></li>
 				</ul>
 			</nav>
-
 		</header>
 
 		<div class="firstDiv">
-			<h1>Lamborghini Aventador Spyder</h1>
+			<h1>Lamborghini</br>Aventador</br>Spyder</h1>
 
 			<div class="fleche">
 				<span class="trait"></span>
@@ -125,7 +131,7 @@
 			<div class="txtSpider">
 				<h2>Aperçu:</h2>
 				<p>L'icône ayant recueilli l'héritage des modèles S historiques Miura, Islero, Countach et Urraco revient se surpasser dans sa version la plus captivante : c’est l’Aventador Spyder. Le nouveau moteur V12 de 740 ch et le design exclusif Lamborghini, inégalable dans cette version décapotable, s'allient au sein de l’Aventador Spyder à une technologie haut de gamme, sommet de sophistication. En effet, la nouvelle dynamique LDVA (Lamborghini Dinamica Veicolo Attiva) offre une expérience de conduite inégalée, à même de nourrir l’égo des pilotes toujours en quête des sensations les plus fortes et procurant le plus d’adrénaline.</p>
-				<a href="https://www.google.com" target="_blank"> Venez la découvrir en exclusivité ! </a>
+				<a href="https://www.lamborghini.com/fr-en/mod%C3%A8les/aventador/aventador-s-roadster" target="_blank">Venez la découvrir en exclusivité !</a>
 			</div>
 
 			<span class="arrow arrowLeft">
@@ -154,36 +160,38 @@
 
 			</div>
 		</div>
+
 		<div class="contact">
 			<h2>Formulaire de contact</h2>
+
+			<form method="post">
+				<div class="txtInfos">
+					<label for="firstName">Prénom :</label>
+				    <input type="text" id="firstName" name="user_name">
+				</div>
+				
+				<div class="txtInfos">
+					<label for="name">Nom :</label>
+				    <input type="text" id="name" name="user_name">
+				</div>
+
+				<div class="txtInfos">
+					<label for="mail">e-mail :</label>
+				    <input type="email" id="mail" value="Ce champ est obligatoire." name="user_mail">
+				</div>
+				
+				<div class="txtInfos">
+				    <label for="msg">Message :</label>
+				    <textarea id="msg" name="user_message">Ce champ est obligatoire. </textarea>
+				</div>
+				
+				<div class="button">
+					<button id="submit" type="submit">Envoyer le message</button>
+				</div>
+
+			</form>
 		</div>
 
-		<form method="post">
-			<div>
-				<label for="firstName">Prénom :</label>
-			    <input type="text" id="firstName" name="user_name">
-			</div>
-			
-			<div>
-				<label for="name">Nom :</label>
-			    <input type="text" id="name" name="user_name">
-			</div>
-
-			<div>
-				<label for="mail">e-mail :</label>
-			    <input type="email" id="mail" value="Ce champ est obligatoire." name="user_mail">
-			</div>
-			
-			<div>
-			    <label for="msg">Message :</label>
-			    <textarea id="msg" name="user_message">Ce champ est obligatoire. </textarea>
-			</div>
-			
-			<div class="button">
-				<button id="submit" type="submit">Envoyer le message</button>
-			</div>
-		</form>
-		
 		<footer>
 			
 		</footer>

@@ -1,16 +1,25 @@
-$(document).ready(function(){
+$(document).ready(function(){ //exécute le code seulement lorsque la page HTML à entierement chargée
 	
 	$('.slider').slick({ 
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		autoplay: true,
 		autoplaySpeed: 4000,
+		responsive: [
+			{
+				breakpoint: 780, //à partir de 780px le slider change
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			}
+		]
 	});
 
 	$('.slider2').slick({
 		prevArrow: $('.arrowLeft'),
     	nextArrow: $('.arrowRight'),
-
+    	dots: true
 	});
 
 	// Validation du formulaire avec affichage d'un message après
@@ -30,5 +39,9 @@ $(document).ready(function(){
 
 	});
 
+	$('.burger').click(function(){
+		$('#navigation').toggleClass('active'); // ajoute la classe .vert si elle n'existe pas, sinon, la supprime
+	})
 });
+
 
