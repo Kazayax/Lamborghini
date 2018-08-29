@@ -19,15 +19,26 @@ header {
 
 header .burger{
 	width: 30px;
-	margin: 34px 0 0 14px;
+	margin: 34px 0 0 20px;
 	display: none;
 }
+
+header nav .cross{
+		display: none;
+	}
 
 header .logo {
 	width: 150px;
 	position: absolute; /* détermine la façon dont est positionné l'élément */
 	top: 10%; /* top, right; bottom; left determinent l'emplacement final */
 	left: 15%;
+}
+
+header nav .cross{
+	width: 30px;
+	position: absolute;
+    top: 34px;
+    left: 30px;
 }
 
 header nav ul {
@@ -194,10 +205,12 @@ header nav li{
 	display: flex;
     justify-content: center;
     color: black;
+    text-decoration: underline;
 }
 
 .spider .arrow{
 	position: absolute;
+    bottom: 50%;
     z-index: 1;
     transform: translateY(50%);
 }
@@ -230,6 +243,7 @@ header nav li{
 	text-align: center;
 	margin-top: 50px;
 	background-color: grey;
+	color: white;
 }
 
 form {
@@ -296,6 +310,10 @@ button {
 
 }
 
+footer p{
+	float: right;
+}
+
 
 				/* RESPONSIVE */
 
@@ -344,7 +362,7 @@ button {
 	
 	header nav{
 		display: none;
-		background: beige;
+		background: #b0c4de;
 	    position: fixed;
 	    top: 0;
 	    right: 0;
@@ -361,10 +379,14 @@ button {
 	}
 
 	header nav ul li {
-		margin: 10px auto;
+		margin: 30px auto;
 	}
 
 	header .burger{
+		display: inline-block;
+	}
+
+	header nav .cross{
 		display: inline-block;
 	}
 
@@ -442,3 +464,4 @@ button {
 		margin: 0 auto;
     	display: block;
 	}
+

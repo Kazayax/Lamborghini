@@ -42,6 +42,10 @@ $(document).ready(function(){ //exécute le code seulement lorsque la page HTML 
 	$('.burger').click(function(){
 		$('#navigation').toggleClass('active'); // ajoute la classe .vert si elle n'existe pas, sinon, la supprime
 	})
+
+	$('.cross').click(function(){
+		$('#navigation').removeClass('active'); // ajoute la classe .vert si elle n'existe pas, sinon, la supprime
+	})
 });
 
 
