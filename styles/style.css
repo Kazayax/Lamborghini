@@ -359,7 +359,8 @@ footer p{
 }
 
 @media screen and (max-width: 780px) {
-	
+
+
 	header nav{
 		display: none;
 		background: #b0c4de;
@@ -380,6 +381,10 @@ footer p{
 
 	header nav ul li {
 		margin: 30px auto;
+	}
+
+	header nav li:hover{
+    	color: black;
 	}
 
 	header .burger{
