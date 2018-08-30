@@ -178,6 +178,7 @@ header nav li{
 	position: relative;
 	display: flex;
     align-items: center;
+    overflow-x: hidden;
 
 }
 

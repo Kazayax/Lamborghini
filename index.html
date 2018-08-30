@@ -8,8 +8,10 @@
 		<link rel="icon" href="images/favicon_.ico" />
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	</head>
@@ -35,15 +37,17 @@
 		</header>
 
 		<div class="firstDiv">
-			<h1 class="animated bounce">Lamborghini</br>Aventador</br>Spyder</h1>
+			<h1 class="animated zoomIn">Lamborghini</br>Aventador</br>Spyder</h1>
 
 			<div class="fleche">
-				<span class="trait"></span>
-				<span class="trait"></span>
+				<div class="animated bounce">
+					<span class="trait"></span>
+					<span class="trait"></span>
+				</div>	
 			</div>
 		</div>
 
-		<div id="second" class="slider">
+		<div id="second" class="slider" data-aos="fade-down" data-aos-duration="500">
 			
 			<div class="slide">
 				<img src="images/lambo-orange-frontal-1-2.jpg"/>
@@ -130,19 +134,19 @@
 
 
 		<div class="spider">
-			<div class="txtSpider">
+			<div class="txtSpider" data-aos="fade-right" data-aos-duration="1000">
 				<h2>Aperçu:</h2>
 				<p>L'icône ayant recueilli l'héritage des modèles S historiques Miura, Islero, Countach et Urraco revient se surpasser dans sa version la plus captivante : c’est l’Aventador Spyder. Le nouveau moteur V12 de 740 ch et le design exclusif Lamborghini, inégalable dans cette version décapotable, s'allient au sein de l’Aventador Spyder à une technologie haut de gamme, sommet de sophistication. En effet, la nouvelle dynamique LDVA (Lamborghini Dinamica Veicolo Attiva) offre une expérience de conduite inégalée, à même de nourrir l’égo des pilotes toujours en quête des sensations les plus fortes et procurant le plus d’adrénaline.</p>
 				<a href="https://www.lamborghini.com/fr-en/mod%C3%A8les/aventador/aventador-s-roadster" target="_blank">Venez la découvrir en exclusivité !</a>
 			</div>
 
-			<span class="arrow arrowLeft">
+			<span class="arrow arrowLeft" data-aos="fade-left" data-aos-duration="1000">
 				<img src="images/arrow-left.png">
 			</span>	
-			<span class="arrow arrowRight">
+			<span class="arrow arrowRight" data-aos="fade-left" data-aos-duration="1000">
 				<img src="images/arrow-right.png">
 			</span>
-			<div class="slider2">
+			<div class="slider2" data-aos="fade-left" data-aos-duration="1000">
 				
 				<div class="slide">
 					<img src="images/lambo-model-2.2.jpg"/>
@@ -163,7 +167,7 @@
 			</div>
 		</div>
 
-		<div class="contact">
+		<div class="contact" data-aos="fade-up">
 			<h2>Formulaire de contact</h2>
 
 			<form method="post">
@@ -195,12 +199,15 @@
 		</div>
 
 		<footer>
-			<p>© Maxence Guilpain ®</p>
+			<p class="animated infinite bounce delay-5s">© Maxence Guilpain ®</p>
 		</footer>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 	<script> AOS.init(); </script>
+
 	</body>
 	<script type="text/javascript" src="scripts/app.js"></script>
 </html>
